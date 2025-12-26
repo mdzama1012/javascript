@@ -1,10 +1,13 @@
 /**
  * NOTES:
+ * block combines multiple statements into a group, It is also know as compound statement.
  *
- * block combines multiple statements into a group. It is also know as compund statement.
  * we group multiple statements into one statement so that we can use multiple statements in place where javascript expects a single statement.
+ *
  * variable inside a block are also hoisted.
+ *
  * we have 5 types of scope: local, global, script, block and closure.
+ *
  * block also follow scope chain just like closure.
  */
 
@@ -17,54 +20,45 @@
   console.log(a, b, c);
 }
 
-// var is function scoped.
 function x() {
+  // var is function scoped.
   var test = "this is test variable";
   console.log(test);
 }
 x();
-// console.log(test);
 
-// example 1: shadowing with var.
+// Example 1: shadowing with var variable.
 var a = 10;
 {
   var a = 20;
-  console.log(a); // prints 20.
+  console.log(a); // 20
 }
-console.log(a); // prints 20.
+console.log(a); // 20
 
-// example 2: shadowing with let.
+// Example 2: shadowing with let.
 let t = 10;
 {
   let t = 20;
-  console.log(t); // prints 20.
+  console.log(t); // 20
 }
-console.log(t); // prints 10.
+console.log(t); // 10
 
-// example 3: shadowing works with function as well.
-let p = 10;
-function x() {
-  let p = 20;
-  console.log(p); // prints 20.
-}
-x();
-console.log(p); // prints 10.
-
-// try to understand how below code works.
+// Example 3: Explain, how below code works?
 function x() {
   var x = 20;
   {
     var y = 10;
     let a = 50;
     const b = 70;
-    // can only access a and b inside this block only.
-    console.log(a, b);
+    // Can only access a and b inside this block only.
+    console.log(a, b, y);
   }
-  // here a and b are block scoped.
+  // x and y are accessed from local scope of function.
   console.log(x, y);
 }
 x();
 
+// Example 4: Block scope chaining
 {
   const a = 5;
   {

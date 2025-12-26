@@ -1,4 +1,4 @@
-let amount = '95.5';
+let amount = "95.5";
 
 // different ways to change string to number:
 // amount = parseInt(amount);
@@ -23,7 +23,7 @@ let amount = '95.5';
 
 console.log(typeof amount, amount);
 
-let num = 'Hello';
+let num = "Hello";
 
 num = parseInt(num);
 console.log(typeof num, num);
