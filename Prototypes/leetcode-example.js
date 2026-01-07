@@ -1,15 +1,13 @@
 /**
- * Example of constructors and prototype chain.
- */
-
-/**
  * @param {number[]} nums
  * @return {void}
  */
 var ArrayWrapper = function (nums) {
   this.nums = nums;
 };
-debugger; // Inspect ArrayWrapper function.
+
+// Inspect ArrayWrapper function.
+debugger;
 
 /**
  * @return {number}
@@ -21,7 +19,9 @@ ArrayWrapper.prototype.valueOf = function () {
   }
   return sum;
 };
-debugger; // Inspect ArrayWrapper function.
+
+// Inspect ArrayWrapper function.
+debugger;
 
 /**
  * @return {string}
@@ -39,11 +39,15 @@ ArrayWrapper.prototype.toString = function () {
   }
   return "[" + str + "]";
 };
-debugger; // Inspect ArrayWrapper function.
+
+// Inspect ArrayWrapper function.
+debugger;
 
 const arr1 = new ArrayWrapper([3, 2, 5, 4, 0]);
 const arr2 = new ArrayWrapper([5, 6, 7, 8, 9]);
-debugger; // Inspect arr1 and arr2 object.
+
+// Inspect arr1 and arr2 object.
+debugger;
 
 console.log(arr1);
 console.log(arr1 + arr2);

@@ -21,7 +21,9 @@ console.log(myObject.__proto__);
 
 // Example of shadowing property.
 const dob = new Date(2002, 12, 10);
-debugger; // Inspect dob object.
+
+// Inspect dob object.
+debugger;
 
 console.log(dob.getTime());
 dob.getTime = function () {
@@ -29,4 +31,5 @@ dob.getTime = function () {
 };
 console.log(dob.getTime());
 
-debugger; // Inspect dob object.
+// Inspect dob object.
+debugger;

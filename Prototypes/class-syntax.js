@@ -1,9 +1,9 @@
 /**
  * classes are added to javascript in ES6 update.
  *
- * classes in javascript is syntactical sugar, the concept of OOPs in javascript way all way there.
+ * classes in javascript is syntactical sugar.
  *
- * It's possible to use prototypes and constructors to implement OOPs in javascript.
+ * It's possible to use prototypes and constructors to implement OOP in javascript.
  *
  * Under the hood, they still use prototypes. its just a way to make it easier to set up a prototype chain.
  */
@@ -19,7 +19,9 @@ class Shape {
   }
 }
 const circle = new Shape("circle");
-debugger; // inspect circle object
+
+// Inspect circle object
+debugger;
 
 class Rectangle extends Shape {
   width;
@@ -44,4 +46,6 @@ class Rectangle extends Shape {
   }
 }
 const rect = new Rectangle("square 1", 20, 20);
-debugger; // inspect rect object and its prototype chain.
+
+// Inspect rect object and its prototype chain.
+debugger;

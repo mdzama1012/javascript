@@ -10,11 +10,11 @@ let radius = [3, 4, 5, 6, 7];
 // this function have similar functionality as map function provided by javascript.
 // polyfill for map functions.
 Array.prototype.calculate = function (cb) {
-	let output = [];
-	for (let i = 0; i < this.length; i++) {
-		output.push(cb(this[i]));
-	}
-	return output;
+  let output = [];
+  for (let i = 0; i < this.length; i++) {
+    output.push(cb(this[i]));
+  }
+  return output;
 };
 
 const area = radius.calculate((radius) => Math.PI * radius * radius);

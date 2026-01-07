@@ -1,4 +1,4 @@
-// this callback starves in task/callback queue.
+// This callback starves in task/callback queue.
 setTimeout(() => console.log("Finally, I get some thread to eat!"), 0);
 
 Promise.resolve()
